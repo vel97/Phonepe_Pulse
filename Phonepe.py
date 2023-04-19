@@ -220,16 +220,10 @@ top_trans_df = pd.DataFrame(top_trans_dt)
 top_trans_df.head()
 top_trans_df.shape
 
-# top_trans_df = top_trans_df[(top_trans_df['District'] != top_trans_df['State'])]
-
 top_trans_df1 = pd.DataFrame(top_trans_dt1)
 top_trans_df1.shape
 top_trans_df1.head()
 
-# out1['data']['districts'][0]['entityName']
-# out1['data']['districts'][0]['metric']['count']
-# out1['data']['districts'][1]['entityName']
-# out1['data']['pincodes'][0]['metric']['count']
 ############## Inserting into mysql database ############################
 import mysql.connector as mc
 from mysql.connector import Error
