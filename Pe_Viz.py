@@ -60,7 +60,8 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('upi1.jpg')  
+add_bg_from_local('upi1.jpg') 
+
 ############################# Data inputs ###########################################
 State = ('andaman-&-nicobar-islands', 'andhra-pradesh', 'arunachal-pradesh','assam',
 'bihar','chandigarh', 'chhattisgarh','dadra-&-nagar-haveli-&-daman-&-diu', 'delhi', 'goa',
@@ -146,7 +147,6 @@ if Option_list =='App Registered':
         st.plotly_chart(fig)
 
 ############################ Mobile Brand Analysis #######################################################
-
 if Option_list == 'Mobile Brand':
     st.markdown("<h1 style='text-align:center; color:#F0FFFF;'"
                 ">Mobile Brand Analysis</h1>",
@@ -170,7 +170,7 @@ if Option_list == 'Mobile Brand':
     bar = px.bar(agg_user_filt,x='Brand_type',y='Brand_count',color='Brand_type',title='Brand Analysis')
     st.plotly_chart(bar)
 
-    ################ distribution of brands using box plot ################################
+    # *****distribution of brands using box plot *****#
     st.markdown("<h1 style='text-align:center; color:#F0FFFF;'"
                 ">Distribution of Brands by Count and Percentage</h1>",unsafe_allow_html=True)
 
