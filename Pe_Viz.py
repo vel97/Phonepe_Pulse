@@ -298,8 +298,7 @@ if Option_list == 'Map':
 
     url = "https://raw.githubusercontent.com/Subhash9325/GeoJson-Data-of-Indian-States/master/Indian_States"
     gdf = gpd.read_file(url)
-    gdf = gdf.drop(['ID_0', 'NL_NAME_1','NAME_0', 'filename', 'filename_1','ISO', 'ID_1', 'filename_2', 'filename_3', 'filename_4'], axis=1)
-    gdf = gdf.drop(['VARNAME_1', 'TYPE_1', 'ENGTYPE_1'], axis=1)
+    gdf = gdf.drop(['ID_0', 'NL_NAME_1','NAME_0','VARNAME_1', 'TYPE_1', 'ENGTYPE_1', 'filename', 'filename_1','ISO', 'ID_1', 'filename_2', 'filename_3', 'filename_4'], axis=1)
     gdf = gdf.rename(columns={"NAME_1": "State"})
 
     #merge
