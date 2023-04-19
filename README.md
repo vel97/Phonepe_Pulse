@@ -1,5 +1,5 @@
 **Problem Statement:**
-The Phonepe pulse Github repository contains a large amount of data related to various metrics and statistics. The goal is to extract this data and process it to obtain insights and information that can be visualized in a user-friendly manner.
+The Phonepe pulse Github repository contains a large amount of data related to transactions and state wise details of india. We should extraxt and produce useful informations from the data.
 
 **Approach:**
 **Data extraction**: Cloning the Github using scripting to fetch the data from the Phonepe pulse Github repository.
